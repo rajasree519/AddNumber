@@ -1,27 +1,22 @@
+Hide   Copy Code
 
-<body>
-    <div>
-        <div>
-            <h1>Add two number</h1>
-        </div>
-        <form>
-            Enter First Number : <br>
-            <input type="text" id="Text1" name="TextBox1">
-            <br>
-            Enter Second Number : <br>
-            <input type="text" id="Text2" name="TextBox2">
-            <br>
-         Result : <br>
-            <input type="text" id="txtresult" name="TextBox3">
-            <br>
-         <input type="button" name="clickbtn" value="Display Result" onclick="add_number()">
-        </form>
-        <script type="text/javascript">
-            function add_number(){
-            var first_number = parseInt(document.getElementsById("Text1").value);
-            var second_number = parseInt(document.getElementsById("Text2").value);
-            var result = first_number + second_number;
-            document.getElementById("txtresult").innerHTML = result;  
-            }
+<html>
+  <head>
+        <title>Input tutorial</title>
+        <script language="javascript">
+                function addNumbers()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 + val2;
+                }
         </script>
-    
+  </head>
+  <body>
+        value1 = <input type="text" id="value1" name="value1" value="1"/>
+        value2 = <input type="text" id="value2" name="value2" value="2"/>
+        <input type="button" name="Sumbit" value="Click here" onclick="javascript:addNumbers()"/>
+        Answer = <input type="text" id="answer" name="answer" value=""/>
+  </body>
+</html>
