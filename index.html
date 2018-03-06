@@ -4,6 +4,7 @@
         <div>
             <h1>Add two number using text box as input using javascript</h1>
         </div>
+        <form>
             Enter First Number : <br>
             <input type="text" id="Text1" name="TextBox1">
             <br>
@@ -14,7 +15,7 @@
             <input type="text" id="txtresult" name="TextBox3">
             <br>
          <input type="button" name="clickbtn" value="Display Result" onclick="add_number()">
-
+        </form>
         <script type="text/javascript">
             function add_number(){
             var first_number = parseInt(document.getElementsById("Text1").value);
